@@ -1,0 +1,12 @@
+footer {
+  font-family: $font-primary;
+  background-color: $colour-headerfooterbg;
+  height: 40px;
+  display: flex;
+  text-align: right;
+}
+.contactinfo {
+  color: $colour-headerfooter;
+  font-size: $font-size-primary;
+  text-decoration: none;
+}

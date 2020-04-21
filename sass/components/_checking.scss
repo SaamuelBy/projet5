@@ -1,0 +1,13 @@
+.step-title {
+  display: flex;
+  justify-content: center;
+  margin: 40px auto 40px;
+}
+
+.form-container {
+  @include form-container;
+}
+
+.confirmation-button {
+  @include button;
+}

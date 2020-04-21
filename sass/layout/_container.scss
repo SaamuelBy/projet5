@@ -1,0 +1,16 @@
+.slogan,
+.product-title {
+  margin: 40px auto 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $colour-secondaryfont;
+  font-size: $font-size-title;
+}
+.container {
+  max-width: 100%;
+}
+
+input {
+  font-size: $font-size-paragraph;
+}

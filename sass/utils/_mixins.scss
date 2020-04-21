@@ -1,0 +1,167 @@
+@mixin prod-prev {
+  height: 320px;
+  border-radius: 1px 1px 12px black;
+  transform: scale(1);
+  transition: transform 200ms;
+  margin-bottom: 40px;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+  &__image {
+    @include image();
+    height: 240px;
+    padding: 0px;
+  }
+  &__heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0px;
+    height: 40px;
+    padding: 0px;
+    background-color: $colour-headerfooterbg;
+    font-size: $font-size-primary;
+    color: $colour-headerfooter;
+  }
+}
+
+@mixin product-page {
+  &__image {
+    height: 440px;
+    @include image();
+  }
+  &__infos-title {
+    font-size: $font-size-primary;
+    color: $colour-primaryfont;
+    margin-bottom: 15px;
+  }
+  &__infos-pricing {
+    font-size: $font-size-primary;
+    color: $colour-primaryfont;
+    margin-bottom: 15px;
+  }
+  &__infos-custom {
+    color: $colour-primaryfont;
+    margin-bottom: 15px;
+    &-title {
+      font-size: $font-size-primary;
+      margin-bottom: 15px;
+    }
+    &-input {
+      font-size: $font-size-paragraph;
+      margin-bottom: 15px;
+      text-align: justify;
+    }
+  }
+  &__infos-descriptif {
+    font-size: $font-size-paragraph;
+    color: $colour-primaryfont;
+    margin-bottom: 15px;
+    text-align: justify;
+  }
+  &__infos-button {
+    @include button;
+  }
+}
+
+@mixin button {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  height: 60px;
+  margin: 40px auto 40px;
+  color: $colour-headerfooter;
+  font-size: $font-size-primary;
+  background-color: $colour-headerfooterbg;
+  border-radius: 10px;
+  transition: all 200ms;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+@mixin image {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+@mixin form-container {
+  &__title {
+    font-size: $font-size-primary;
+    color: $colour-primaryfont;
+    margin-bottom: 15px;
+  }
+  &__pricing {
+    font-size: $font-size-primary;
+    color: $colour-primaryfont;
+    margin-bottom: 15px;
+  }
+  &__infos {
+    font-size: $font-size-paragraph;
+    color: $colour-primaryfont;
+    margin-bottom: 15px;
+    text-align: justify;
+  }
+  &__image {
+    @include image();
+    background-color: #bc8f8f;
+    height: 320;
+  }
+}
+
+@mixin form-confirmation {
+  background-color: #bc8f8f;
+  margin: 60px auto 60px;
+  &__title {
+    font-size: $font-size-primary;
+    color: $colour-primaryfont;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__commandtitle {
+    font-size: $font-size-primary;
+    color: $colour-primaryfont;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__commandnumber {
+    font-size: $font-size-primary;
+    color: $colour-primaryfont;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__amount {
+    font-size: $font-size-primary;
+    color: $colour-primaryfont;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__pricing {
+    font-size: $font-size-primary;
+    color: $colour-primaryfont;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__bye {
+    font-size: $font-size-primary;
+    color: $colour-primaryfont;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
