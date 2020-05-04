@@ -10,6 +10,7 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     />
+    <script type="text/javascript" src="../js/main/order.js"></script>
     <title>FocusCameras</title>
   </head>
   <body>
@@ -81,15 +82,61 @@
             </div>
           </div>
           <div class="row">
-            <button
-              class="confirmation-button"
-              onclick="location.href='../html/confirmation.html'"
+            <div
+              class="col-lg-8 offset-lg-2 col-md-8 offset-md-2 col-sm-8 offset-sm-2"
             >
-              Valider mon panier
-            </button>
+              <div class="row">
+                <form
+                  id="myForm"
+                  action=""
+                  method="get"
+                  class="form col-lg-12 col-md-12 col-sm-12"
+                >
+                  <div class="myForm_firstName">
+                    <label for="firstName">Votre prénom</label> <br />
+                    <input type="text" name="firstName" id="firstName" />
+                    <span class="tooltip">Veuillez rentrer votre prénom</span>
+                  </div>
+                  <div class="myForm_lastName">
+                    <label for="lastName">Votre nom</label> <br />
+                    <input type="text" name="lastName" id="lastName" />
+                    <span class="tooltip">Veuillez rentrer votre nom</span>
+                  </div>
+                  <div class="myForm_city">
+                    <label for="city">Votre ville</label> <br />
+                    <input type="text" name="city" id="city" />
+                    <span class="tooltip">Veuillez rentrer votre ville</span>
+                  </div>
+                  <div class="myForm_adress">
+                    <label for="adress">Votre adresse</label> <br />
+                    <input type="text" name="adress" id="adress" />
+                    <span class="tooltip">Veuillez rentrer votre ville</span>
+                  </div>
+                  <div class="myForm_email">
+                    <label for="email">Votre e-mail</label> <br />
+                    <input type="email" name="email" id="email" />
+                    <span class="tooltip"
+                      >Veuillez rentrer votre adresse mail</span
+                    >
+                  </div>
+                  <div class="myForm_phoneNumber">
+                    <label for="phone-number">Votre téléphone</label> <br />
+                    <input type="number" name="phone-number" id="phoneNumber" />
+                    <span class="tooltip"
+                      >Veuillez rentrer votre numéro de téléphone</span
+                    >
+                  </div>
+                  <div class="myForm_button">
+                    <button class="button" type="submit">
+                      Valider mon panier
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
           </div>
         </main>
-        <footer class="fotter col-lg-12 col-md-12 col-sm-12 fixed-bottom">
+        <footer class="fotter col-lg-12 col-md-12 col-sm-12">
           <a class="contactinfo" href="mailto:contact@brimuel.com">
             Contactez-nous
           </a>

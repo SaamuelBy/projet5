@@ -8,6 +8,56 @@
   @include form-container;
 }
 
-.confirmation-button {
+.button {
   @include button;
+  background-color: $colour-headerfooterbg;
+}
+
+.form {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 60px auto 40px;
+}
+
+.label {
+  color: $colour-primaryfont;
+  font-size: $font-size-primary;
+}
+
+.input {
+  color: $colour-primaryfont;
+  font-size: $font-size-primary;
+  outline: none;
+  border-radius: 2px;
+  border: 1px solid #ccc;
+  &:focus {
+    border-color: rgba(82, 168, 236, 0.75);
+    box-shadow: 0 0 8px rgba(82, 168, 236, 0.5);
+  }
+}
+
+.correct {
+  border-color: rgba(68, 191, 68, 0.75);
+  &:focus {
+    border-color: rgba(68, 191, 68, 0.75);
+    box-shadow: 0 0 8px rgba(68, 191, 68, 0.5);
+  }
+}
+.incorrect {
+  border-color: rgba(191, 68, 68, 0.75);
+  &:focus {
+    border-color: rgba(191, 68, 68, 0.75);
+    box-shadow: 0 0 8px rgba(191, 68, 68, 0.5);
+  }
+}
+
+.tooltip {
+  display: inline-block;
+  margin-left: 20;
+  padding: 2px 4px;
+  border: 1px solid #bc8f8f;
+  background-color: #ccc;
+  border-radius: 4px;
 }
